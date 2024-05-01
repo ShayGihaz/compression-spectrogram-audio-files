@@ -6,13 +6,13 @@ function uplodeFileFunc(filename, fileType)
     overlap = 256;    % Overlap between consecutive windows in samples
     [s, f, t] = spectrogram(monoData, windowSize, overlap, hamming(windowSize), sampleRate);
 
-    %figure;
-    %imagesc(t, f, 10*log10(abs(s))); % Convert to dB scale for better visualization
-    %axis xy; % Invert Y-axis to have low frequencies at the bottom
-    %xlabel('Time (seconds)');
-    %ylabel('Frequency (Hz)');
-    %title(['Spectrogram of ', fileType, ' file type']);
-    %colorbar; % Add a color bar indicating magnitude
+    figure;
+    imagesc(t, f, 10*log10(abs(s))); % Convert to dB scale for better visualization
+    axis xy; % Invert Y-axis to have low frequencies at the bottom
+    xlabel('Time (seconds)');
+    ylabel('Frequency (Hz)');
+    title(['Spectrogram of ', fileType, ' file type']);
+    colorbar; % Add a color bar indicating magnitude
 
     figure;
     waterfall(t, f, 10*log10(abs(s)));
