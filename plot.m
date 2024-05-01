@@ -1,24 +1,23 @@
-filename = '"filename".wav';
+filename = '"wav_filename".wav';
 fileType = 'wav';
 uplodeFileFunc(filename, fileType);
 
-filename = '"filename".flac';
+filename = '"flac_filename".flac';
 fileType = 'flac';
 uplodeFileFunc(filename, fileType);
 
-filename = '"filename".aiff';
+filename = '"aiff_filename".aiff';
 fileType = 'aiff';
 uplodeFileFunc(filename, fileType);
 
-filename = '"filename".m4a';
+filename = '"m4a_filename".m4a';
 fileType = 'm4a';
 uplodeFileFunc(filename, fileType);
 
-filename = '"filename".aac';
+filename = '"aac_filename".aac';
 fileType = 'aac';
 uplodeFileFunc(filename, fileType);
 
-filename = '"filename".mp3';
+filename = '"mp3_filename".mp3';
 fileType = 'mp3';
 uplodeFileFunc(filename, fileType);
-
